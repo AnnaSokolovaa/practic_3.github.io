@@ -1,0 +1,319 @@
+body{
+
+    &.lock{
+        overflow: hidden;
+    }
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .menu_big{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 25%;
+        background-color: #fff;
+
+        .menu{
+            list-style-type: none;
+            margin-left: 0%;
+            
+            & li:first-child{
+                margin-top: 25%;
+            }
+            
+            & li{
+               margin-top: 7.5%;
+            }
+    
+            & a{
+                text-decoration: underline;
+                text-underline-position: under;
+                text-decoration-thickness: 1px;
+                text-decoration-color: #999999;
+                font-size: 1.6vw;
+                font-weight: 400;
+                color: black;
+            }
+    
+            .seven{
+                color: #F05A26;
+                text-decoration-color: #F05A26;
+            }
+        }
+
+    
+        & p{
+            font-size: 1.6vw;
+            font-weight: 400;
+            margin-left: 10%;
+            margin-top: 50%;
+        }
+
+        .icon_1{
+
+            & i{
+                color: #F05A26;
+                font-size: 2vw;
+            }
+    
+            & i:first-child{
+                margin-left: 10%;
+            }
+    
+            & i:first-child, & i:nth-of-type(2), & i:nth-of-type(3){
+                margin-right: 7.5%;
+            }
+        }
+
+        &.active{
+            display: block;
+            transition: all .3s ease 0s;
+        }
+    }
+
+    .burger__icon{
+        margin-right: 2.5%;
+        width: 2.5vw;
+        height: 1.5vw;
+        position: relative;
+        cursor: pointer;
+    
+        & span, &::after, &::before{
+            height: 0.25vw;
+            width: 100%;
+            background-color: #F05A26;
+            position: absolute;
+            transition: all .3s ease 0s;
+        }
+    
+        &::after, &::before{
+            content: '';
+        }
+        //Положение средней линии ровно между верхней и нижней
+        & span{
+            top: 40%;
+        }
+        //Указываем, чтобы видны были верхняя и нижняя линии
+        &::after{
+            top: 0;
+        }
+    
+        &::before{
+            bottom: 0;
+        }
+        //Для анимированного перехода из бургера в крестик
+        &.active{
+            position: fixed;
+            //Среднюю линию поворачиваем на -45 градусов
+            & span{
+                transform: rotate(-45deg);
+            }
+            //верхнюю линию поворачиваем на 45 градусов
+            &::after{
+                transform: rotate(45deg);
+                top: 40%;
+            }
+            //Нижнюю линию скрываем 
+            &::before{
+                width: 0px;
+            }
+        }
+    }
+    
+    .logo_1{
+
+        & img{
+            width: 9vw;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+    //Модальное окно
+    .phone_number{
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: 0;
+        align-items: center;
+    
+        & p:first-child{
+            font-size: 1.2vw;
+            font-weight: 700;
+            margin-left: -10%;
+        }
+    
+        #open-modal_window__btn{
+            border: 2px solid #F05A26;
+            color: #F05A26;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+            padding-left: 2vw;
+            padding-right: 2vw;
+            font-size: 1vw;
+            font-weight: 400;
+            margin-left: 10%;
+            cursor: pointer;
+            display: block;
+        }
+    }
+    
+    //Верстаем положение окна на странице
+    .modal_Window {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+
+        //Делаем видимым активный блок
+        & .active{
+            display: block;
+        }
+    }
+    
+    .modal_window__content {
+        width: 35%;
+        max-width: 700px;
+        margin: 100px auto;
+        box-shadow: 1px 1px 10px #777777;
+        padding-top: 3vw;
+        padding-bottom: 5vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        background-color: #fff;
+        /* Для анимации */
+        position: relative;
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+
+        .modal_window_text_10{
+            font-size: 2.5vw;
+            font-weight: 700;
+            color: #F05A26;
+            margin-bottom: 12.5%;
+        }
+
+        & input{
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid #999999;
+            outline:none;
+        }
+
+        & span{
+            font-size: 1.2vw;
+            font-weight: 400;
+            color: #191919;
+            margin-bottom: 2.5%;
+        }
+
+        .modal_window__close{
+            font-size: 3vw;
+            font-weight: 700;
+        }
+
+        & label{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .label_1, .label_2{
+            margin-bottom: 10%;
+
+            & input{
+                font-size: 1.6vw;
+                font-weight: 400;
+            }
+        }
+
+        .label_3{
+            margin-bottom: 5%;
+
+            .modal_window_text_11{
+                color: #999999;
+                font-size: 0.8vw;
+                font-weight: 400;
+                margin-top: 2.5%;
+                margin-bottom: 7.5%;
+            }
+
+            & select{
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: 1px solid #999999;
+                outline:none;
+                font-size: 1.6vw;
+                font-weight: 400;
+            }
+
+            & option{
+                font-size: 1.6vw;
+                font-weight: 400;
+            }
+        }
+
+        .send{
+            background-color: #999999;
+            color: #fff;
+            font-size: 1.2vw;
+            font-weight: 100;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+            padding-left: 6vw;
+            padding-right: 6vw;
+            display: inline;
+        }
+
+        .protection_policy{
+            font-size: 1.2vw;
+            font-weight: 400;
+            color: #999999;
+            margin-top: 7.5%;
+
+            .orange{
+                color: #F05A26;
+                font-size: 1.2vw;
+                font-weight: 400;
+            }
+        }
+    }
+    .modal_window__close,
+    .modal_window__closeBtn {
+        font-size: 40px;
+        color: #777777;
+        cursor: pointer;
+        float: right;
+    }
+    
+    //Для анимации
+    @keyframes animatetop {
+        from {
+            top: -300px;
+            opacity: 0;
+        }
+        to {
+            top: 0;
+            opacity: 1;
+        }
+    }
+}

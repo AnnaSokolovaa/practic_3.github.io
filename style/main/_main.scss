@@ -1,0 +1,37 @@
+.main{
+    
+    & p:first-child{
+        font-size: 3.3vw;
+        font-weight: 700;
+
+        .span_1{
+            color: #F05A26;
+        }
+    }
+
+    & p:nth-of-type(2){
+        font-weight: 400;
+        font-size: 1.6vw;
+        margin-top: -2%;
+        margin-bottom: 4.5%;
+    }
+
+    & p:nth-of-type(3){
+        font-size: 1.2vw;
+        font-weight: 700;
+        color: white;
+        background-color: #F05A26;
+        display: inline;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    & img{
+        margin-top: 5%;
+        margin-left: -6%;
+        margin-right: -6%;
+        width: 111.5%;
+    }
+}

@@ -1,0 +1,537 @@
+@import "main/main";
+@import "tabs/tabs";
+@import "sliders/slider";
+@import "sale/sale";
+@import "filterable/filter";
+@import "header/header";
+@import "other_apartments/other_apartments";
+@import "calculate_cost_product/calculate_cost_product";
+@import "footer/footer";
+@import "accordion/accordion";
+
+@font-face{
+    font-family: 'Inter Regular';
+    src: url(fonts/Inter-Regular.otf);
+}
+
+body{
+    font-family: 'Inter Regular';
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+body{
+    font-family: 'Inter Regular';
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media(max-width: 768px){	
+	header{
+	
+		.menu_big{
+			width: 35%;
+
+			.menu{
+				margin-left: 15%;
+	
+				& p:first-child{
+					margin-top: 35%;
+				}
+		
+				& a{
+					font-size: 2.4vw;
+				}
+			}
+	
+		
+			& .text_18{
+				font-size: 2.4vw;
+				margin-left: 15%;
+			}
+	
+			.icon_1{
+	
+				& i{
+					font-size: 3vw;
+				}
+		
+				& i:first-child{
+					margin-left: 15%;
+				}
+		
+				& i:first-child, & i:nth-of-type(2), & i:nth-of-type(3){
+					margin-right: 7.5%;
+				}
+			}
+		}
+	
+		.burger__icon{
+			width: 3.5vw;
+			height: 2.5vw;
+		}
+
+		
+		
+		.logo_1{
+	
+			& img{
+				width: 12vw;
+			}
+		}
+	
+	
+	
+		//Модальное окно
+		.phone_number{
+		
+			& p:first-child{
+				font-size: 2vw;
+			}
+		
+			#open-modal_window__btn{
+				font-size: 1.8vw;
+			}
+		}
+		
+		.modal_window__content {
+	
+			.modal_window_text_10{
+				font-size: 3.3vw;
+			}
+	
+			& span{
+				font-size: 2vw;
+			}
+	
+			.modal_window__close{
+				font-size: 3.8vw;
+			}
+	
+			.label_1, .label_2{
+	
+				& input{
+					font-size: 2.4vw;
+				}
+			}
+	
+			.label_3{
+	
+				.modal_window_text_11{
+					font-size: 1.6vw;
+				}
+	
+				& select, & option{
+					font-size: 2.4vw;
+				}
+			}
+	
+			.send{
+				font-size: 2vw;
+			}
+	
+			.protection_policy{
+				font-size: 2vw;
+	
+				.orange{
+					font-size: 2vw;
+				}
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.main{
+		
+		& p:first-child{
+			font-size: 4.1vw;
+		}
+	
+		& p:nth-of-type(2){
+			font-size: 2.4vw;
+		}
+	
+		& p:nth-of-type(3){
+			font-size: 2vw;
+			font-weight: 400;
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+	.principled_approach{
+		display: none;
+	}
+
+	.accordion{
+		display: block;
+	}
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.price{
+	
+		.price_text_1{
+			font-size: 3.3vw;
+		}
+	
+		.price_text_2{ 
+			font-size: 2.4vw;
+		}
+	
+		.price_point1{
+			display: flex;
+			flex-direction: column;
+	
+			.price_point2, .price_point3{
+	
+				& p:first-child{
+					font-size: 2vw;
+				}
+	
+				& p:last-child{
+					font-size: 3.3vw;
+				}
+			}
+	
+			.price_point3{
+				margin-left: 0;
+				margin-top: 5%;
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+	.filter{
+	
+		.filter_container{
+	
+			.list{
+				margin-bottom: 10%;
+				
+				& p{
+					font-size: 2vw;
+				}
+			}
+	
+			.filter_blocks{
+				display: grid;
+				grid-template-columns: repeat(1, 1fr);
+				row-gap: 1.5%;
+	
+				& .blocks__item{
+	
+					& .filter_text{
+	
+						& p{
+							font-size: 2.4vw;
+						}
+					}
+	
+					& .text_5{
+						font-size: 2vw;
+						margin-top: -1%;
+					}
+	
+					& .text_6{ 
+						font-size: 2vw;
+					}
+				}
+			}
+		}
+	}
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.text_after_filters{
+		font-size: 3.3vw;
+		margin-top: 20%;
+	}
+
+
+
+
+
+
+
+
+
+
+	.customers{
+	
+		.customers_elem1{
+	
+			& p:first-child{
+				font-size: 3.3vw;
+			}
+	
+			& p:last-child{
+				font-size: 2vw;
+			}
+		}
+	
+		.customers_elem3, .customers_elem4{
+	
+			& .icon_2, & .icon_3{
+				left: 47.5%;
+				top: 40%;
+				font-size: 5vw;
+			}
+		}
+
+		.customers_elem6{
+			font-size: 2.4vw;
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.calculate_cost_product{
+	
+		.calculate_cost_product_text_1{
+			font-size: 3.3vw;
+		}
+	
+		.calculate_cost_product_block{
+	
+			.calculate_cost_product_content{
+				
+				.calculate_cost_product_text{
+					display: flex;
+					flex-direction: column;
+		
+					.calculate_cost_product_content_point1{
+		
+						.calculate_cost_product_text_2{
+							font-size: 2vw;
+						}
+		
+						.calculate_cost_product_points{
+							margin-top: -2%;
+	
+							& p{
+								font-size: 2.4vw;
+							}
+	
+							& input{
+								font-size: 2.4vw;
+								width: 30%;
+							}
+						}
+					}
+		
+					.calculate_cost_product_content_point2{
+						margin-right: 0%;
+						margin-left: 5%;
+						margin-top: 5%;
+		
+						.calculate_cost_product_text_3{
+							font-size: 2vw;
+						}
+		
+						.calculate_cost_product_content_point3{
+		
+							& p{
+								font-size: 2.4vw;
+								margin-right: 5%;
+							}
+		
+							& p:first-child{
+								font-size: 1.6vw;
+							}
+		
+							& p:last-child{
+								margin-right: 0;
+							}
+						}
+					}
+		
+					.calculate_cost_product_content_point4{
+						margin-left: 5%;
+						margin-top: 5%;
+		
+						.calculate_cost_product_text_4{
+							font-size: 2vw;
+						}
+		
+						.calculate_cost_product_content_point5{
+		
+							& p{
+								font-size: 2.4vw;
+								margin-right: 5%;
+							}
+						}
+					}
+				}
+			}
+		}
+	
+		.calculate_cost_product_buttons{
+			margin-top: 5%;
+	
+			& p:first-child, & p:nth-of-type(2), & p:last-child{
+				font-size: 2vw;
+			}
+		}
+	}
+
+
+
+
+
+
+
+	footer{
+	
+		.footer_main{
+	
+			.footer_text_1{
+				font-size: 2vw;
+			}
+		
+			.footer_text_2, .footer_text_3{
+				font-size: 2.4vw;
+			}
+		
+			.footer_point1{
+		
+				& p:first-child{
+					font-size: 3.3vw;
+				}
+		
+				& p:last-child{
+					display: none;
+				}
+			}
+		}
+	
+		.icon{
+	
+			& i{
+				font-size: 3vw;
+			}
+		}
+	
+		.footer_menu{
+			flex-direction: column;
+			margin-top: 5%;
+	
+			& p{
+				font-size: 2.25vw;
+				font-weight: 200;
+			}
+		}
+	
+		.hr{
+			margin-top: 5%;
+	
+			& hr{
+				color: #999999;
+			}
+		}
+	
+		.footer_down{
+			flex-direction: column;
+	
+			.logo{
+				margin-bottom: 2.5%;
+	
+				& img{
+					width: 15vw;
+				}
+			}
+	
+			& p{
+				margin-left: 5%;
+				font-size: 2vw;
+			}
+	
+			& p:last-child{
+				margin-left: 5%;
+				margin-top: 5%;
+			}
+		}
+	}
+}

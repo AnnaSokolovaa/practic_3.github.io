@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'> 
+    <link rel="stylesheet" href="style/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="menu_big">
+            <ul class="menu">
+                <li><a href="#main">Главная</a></li>
+                <li><a href="#about us">О нас</a></li>
+                <li><a href="#slider">Наши проекты</a></li>
+                <li><a href="#sale">Цены на ремонт</a></li>
+                <li><a href="#">Отзывы клиентов</a></li>
+                <li><a href="#">Расчет стоимости</a></li>
+                <li><a href="#" class = "seven">Контакты</a></li>
+            </ul>
+            <p>Задать вопрос</p>
+            <div class="icon_1">
+                <i class='fa fa-instagram'></i>
+                <i class='fa fa-vk'></i>
+                <i class='fa fa-facebook'></i>
+                <i class='fa fa-odnoklassniki'></i>
+            </div>
+        </div>
+        <div class="burger__icon">
+            <span></span>
+        </div>
+
+        <div class="logo_1">
+            <img src = "style/pictures/черное_лого.png">
+        </div>
+
+
+
+
+        <!--Модальное окно-->
+        <div class="phone_number" id="modal_window-open">
+            <p>+7 927 705-15-86</p>
+            <p id="open-modal_window__btn">Заказать звонок</p>
+        </div>
+    
+        <form id="modal_Window" class="modal_Window">
+            <div class="modal_window__content">
+                <span class="modal_window__close">&times;</span>
+                <p class = "modal_window_text_10">Заказать звонок</p>
+                <label class = "label_1">
+                    <span>Имя</span>
+                    <input type="name">
+                </label>
+                <label class = "label_2">
+                    <span>Телефон</span>
+                    <input type="tel">
+                </label>
+                <label class = "label_3">
+                    <span>Удобное время для звонка</span>
+                    <select name = "специализация">
+                        <option>9:00-11:00</option>
+                        <option>11:00-13:00</option>
+                        <option>13:00-15:00</option>
+                        <option>15:00-17:00</option>
+                        <option>17:00-19:00</option>
+                        <option>19:00-21:00</option>
+                    </select>
+                    <p class = "modal_window_text_11">Мы можем перезвонить в любой день с 9:00 до 22:00</p>
+                </label>
+                <p class="send" type = "reset">Отправить</p>
+                <p class = "protection_policy">
+                    Нажимая на кнопку, вы соглашаетесь с политикой <br>
+                    <span class = "orange">защиты персональной информации</span>.
+                </p>
+            </div>
+        </form>
+    </header>
+
+    
+
+
+
+
+
+
+
+
+
+
+    
+    <div class = "main" id = "main">
+        <p>
+            Капитальный ремонт квартир<span class = "span_1">.</span> <br>
+            Без задержек и превышения сметы
+        </p>
+        <p>Под ключ от 5500 ₽ за 1 м²</p>
+        <p>✓ Рассчитать стоимость</p>
+        <div class="photo">
+            <img src = "style/pictures/Главное фото.png">
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--ТАБЫ-->
+
+
+    <div class="tabs_and_accordion" id = "about us">
+        <div class="principled_approach">
+            <p class = "text_1">Принципиальный подход</p>
+            <div class="tabs">
+                <p class = "active">01 Полностью под ключ</p>
+                <p>02 Настоящая гарантия</p>
+                <p>03 Прозачные цены</p>
+            </div>
+            <div class="tab_content">
+                <div class = "tab-block active">
+                    <div class="blocks">
+                        <div class = "elem1">
+                            <p>Всё включено</p>
+                            <p>В стоимость ремонта входит всё: <br>
+                                работы, материалы, организация, <br>
+                                документация, управление, <br>
+                                контроль и гарантия.</p>
+                        </div>
+                        <div class = "elem2">
+                            <p>Без вашего участия</p>
+                            <p>Мы беспокоим хозяев лишь раз и <br>
+                                по приятному поводу: сообщаем, <br>
+                                что можно въезжать в <br>
+                                обновлённую квартиру.</p>
+                        </div>
+                        <div class = "elem3">
+                            <p>Постоянная отчетность</p>
+                            <p>Присылаем ежедневные <br>
+                                фотоотчеты на e-mail, Viber, <br>
+                                Whatsapp или любые другие <br>
+                                соцсети.</p>
+                        </div>
+                    </div>
+                    <p class = "text_2">Пример технического дизайна ↓</p>
+                </div>
+
+                <div class = "tab-block">
+                    <div class="blocks">
+                        <div class = "elem1">
+                            <p>Начинаем без предоплаты</p>
+                            <p>Оплата по факту выполненных <br> 
+                                работ. За задержки по срокам <br>
+                                платим мы — всё прописано в <br>
+                                договоре.</p>
+                        </div>
+                        <div class = "elem2">
+                            <p>Гарантия за нас счет</p>
+                            <p>У нас настоящая гарантия 10 лет <br>
+                                на сантехнику и электрику и  2 <br>
+                                года на отделочные материалы.</p>
+                        </div>
+                        <div class = "elem3">
+                            <p>Тройной контроль</p>
+                            <p>Каждая выполненная работа <br>
+                                проверяется: прорабом, <br>
+                                менеджером и главным <br>
+                                инженером.</p>
+                        </div>
+                    </div>
+                    <p class = "text_2">Скачать образец договора ↓</p>
+                </div>
+                
+                <div class = "tab-block">
+                    <div class="blocks">
+                        <div class = "elem1">
+                            <p>Цена известна заранее</p>
+                            <p>Стоимость работ от 5 500 ₽. Цена <br>
+                                фиксируется после согласования <br>
+                                проекта и демонтажа и не <br>
+                                меняется в процессе работ.</p>
+                        </div>
+                        <div class = "elem2">
+                            <p>Бесплатный выезд на замеря</p>
+                            <p>Замерщик приедет в удобное для <br>
+                                вас время. Чтобы вызвать <br>
+                                замерщика позвоните нам или <br>
+                                оставьте заявку на нашем сайте.</p>
+                        </div>
+                        <div class = "elem3">
+                            <p>Бесплатная уборка</p>
+                            <p>Уборка мусора и наведение <br>
+                                порядка после окончания <br>
+                                ремонтных работ нашими <br>
+                                партнерами из клининг агентства.</p>
+                        </div>
+                    </div>
+                    <p class = "text_2">Скачать прайс лист ↓</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+
+    <!--АККОРДИОН-->
+
+    <div class="accordion">
+        <p class = "accordion_text_1">Принципиальный подход</p>
+        <div class = "accordion_contentBox">
+            <div class="point active">01 Полностью под ключ</div>
+            <div class="accordion_content">
+                <div class = "accordion_point1">
+                    <p>Всё включено</p>
+                    <p>В стоимость ремонта входит всё: <br>
+                        работы, материалы, организация, <br>
+                        документация, управление, <br>
+                        контроль и гарантия.</p>
+                </div>
+                <div class = "accordion_point2">
+                    <p>Без вашего участия</p>
+                    <p>Мы беспокоим хозяев лишь раз и <br>
+                        по приятному поводу: сообщаем, <br>
+                        что можно въезжать в <br>
+                        обновлённую квартиру.</p>
+                </div>
+                <div class = "accordion_point3">
+                    <p>Постоянная отчетность</p>
+                    <p>Присылаем ежедневные <br>
+                        фотоотчеты на e-mail, Viber, <br>
+                        Whatsapp или любые другие <br>
+                        соцсети.</p>
+                </div>
+                <p class = "accordion_text_1">Пример технического дизайна ↓</p>
+            </div>
+        </div>
+        <div class = "accordion_contentBox">
+            <div class="point">02 Настоящая гарантия</div>
+            <div class="accordion_content">
+                <div class = "accordion_point1">
+                    <p>Начинаем без предоплаты</p>
+                    <p>Оплата по факту выполненных <br> 
+                        работ. За задержки по срокам <br>
+                        платим мы — всё прописано в <br>
+                        договоре.</p>
+                </div>
+                <div class = "accordion_point2">
+                    <p>Гарантия за нас счет</p>
+                    <p>У нас настоящая гарантия 10 лет <br>
+                        на сантехнику и электрику и  2 <br>
+                        года на отделочные материалы.</p>
+                </div>
+                <div class = "accordion_point3">
+                    <p>Тройной контроль</p>
+                    <p>Каждая выполненная работа <br>
+                        проверяется: прорабом, <br>
+                        менеджером и главным <br>
+                        инженером.</p>
+                </div>
+                <p class = "accordion_text_1">Скачать образец договора ↓</p>
+            </div>
+        </div>
+        <div class = "accordion_contentBox">
+            <div class="point">03 Прозачные цены</div>
+            <div class="accordion_content">
+                <div class = "accordion_point1">
+                    <p>Цена известна заранее</p>
+                    <p>Стоимость работ от 5 500 ₽. Цена <br>
+                        фиксируется после согласования <br>
+                        проекта и демонтажа и не <br>
+                        меняется в процессе работ.</p>
+                </div>
+                <div class = "accordion_point2">
+                    <p>Бесплатный выезд на замеря</p>
+                    <p>Замерщик приедет в удобное для <br>
+                        вас время. Чтобы вызвать <br>
+                        замерщика позвоните нам или <br>
+                        оставьте заявку на нашем сайте.</p>
+                </div>
+                <div class = "accordion_point3">
+                    <p>Бесплатная уборка</p>
+                    <p>Уборка мусора и наведение <br>
+                        порядка после окончания <br>
+                        ремонтных работ нашими <br>
+                        партнерами из клининг агентства.</p>
+                </div>
+                <p class = "accordion_text_1">Скачать прайс лист ↓</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--СЛАЙДЕРЫ-->
+    <div class="sliders" id = "slider">
+        <p>Квартира будет выглядеть как в проекте</p>
+        <p>Кликайте по картинке, чтобы листать фото проекта. Стрелки переключат проект. </p>
+        <div class="slider">
+            <div class="slider__container">
+                <button class="slider__nav slider__nav-left">&lt;</button>
+                <img src="style/pictures/slide1.png" alt="" class="slider__image fade" />
+                <button class="slider__nav slider__nav-right">&gt;</button>
+            </div>
+            <div class="slider__controls">
+                <div class="slider__dots">
+                    <span class="slider__dot activ" onclick="changeIndex(0)"></span>
+                    <span class="slider__dot" onclick="changeIndex(1)"></span>
+                    <span class="slider__dot" onclick="changeIndex(2)"></span>
+                </div>
+            </div>
+        </div>
+        <div class="slider_block">
+                <div class="slider_elem1">
+                    <p class = "text_19">2 / 3</p>
+                    <div class="slider_elem2">
+                        <p class = "text_20">
+                            ЖК «Рассказово» — трехкомнатная квартира в французском стиле: серые стены, тёмный паркет, <br>
+                            классические двери, высокий белый плинтус.
+                        <div class="slider_elem3">
+                            <div class="slider_elem4">
+                                <p>площадь</p>
+                                <p>55 м²</p>
+                            </div>
+                            <div class="slider_elem4">
+                                <p>срок ремонта</p>
+                                <p>2 месяца</p>
+                            </div>
+                            <div class="slider_elem4">
+                                <p>на материалы</p>
+                                <p>1 500 000 ₽</p>
+                            </div>
+                            <div class="slider_elem4">
+                                <p>за работу</p>
+                                <p>750 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+
+
+
+    <div class="price" id = "price">
+        <p class = "price_text_1">Скидка за предоплату и рассрочка без банка</p>
+        <div class="price_point1">
+            <div class="price_point2">
+                <p>
+                    При оплате всей суммы сразу вы получите <br>
+                    скидку от всей суммы сметы. 
+                </p>
+                <p>3%</p>
+            </div>
+            <div class="price_point3">
+                <p>
+                    Мы можем разбить оплату за работу на ежемесячные <br>
+                    платежи. Комиссию за рассрочку мы не берём.
+                </p>
+                <p>до 6 месяцев</p>
+            </div>
+        </div>
+        <p class = "price_text_2">Почему «Котов» не работает с банками?</p>
+    </div>
+
+
+
+
+    <!--ФИЛЬТРАЦИЯ-->
+
+
+
+
+    <div class="filter">
+        <div class="filter_container">
+            <div class="list">
+                <p class="list__item active" data-id="all">Все</p>
+                <p class="list__item" data-id="cosmitic">Косметический</p>
+                <p class="list__item" data-id="capital_repairs">Капитальный</p>
+                <p class="list__item" data-id="euro_renovation">Евроремонт</p>
+                <p class="list__item" data-id="design">Дизайнерский</p>
+            </div>
+            <div class="filter_blocks">
+                <div class="blocks__item cosmitic">
+                    <img src = "style/pictures/slide1.png">
+                    <div class="filter_text">
+                        <p>Косметический</p>
+                        <p>от 5500 ₽ / м²</p>
+                    </div>
+                    <p class = "text_5">
+                        Идеально подойдет тем, кто хочет освежить внешний <br>
+                        вид квартиры без внесения серьезных изменений в <br>
+                        инженерные системы и смены планировки.
+                    </p>
+                    <p class = "text_6">Рассчитать стоимость</p>
+                </div>
+
+                <div class="blocks__item capital_repairs">
+                    <img src = "style/pictures/slide2.png">
+                    <div class="filter_text">
+                        <p>Капитальный</p>
+                        <p>от 7500 ₽ / м²</p>
+                    </div>
+                    <p class = "text_5">
+                        Идеально подойдет тем, кто хочет освежить внешний <br>
+                        вид квартиры без внесения серьезных изменений в <br>
+                        инженерные системы и смены планировки.
+                    </p>
+                    <p class = "text_6">Рассчитать стоимость</p>
+                </div>
+    
+                <div class="blocks__item euro_renovation">
+                    <img src = "style/pictures/slide3.png">
+                    <div class="filter_text">
+                        <p>Евроремонт</p>
+                        <p>от 11000 ₽ / м²</p>
+                    </div>
+                    <p class = "text_5">
+                        Идеально подойдет тем, кто хочет освежить внешний <br>
+                        вид квартиры без внесения серьезных изменений в <br>
+                        инженерные системы и смены планировки.
+                    </p>
+                    <p class = "text_6">Рассчитать стоимость</p>
+                </div>
+
+                <div class="blocks__item design">
+                    <img src = "style/pictures/slide4.png">
+                    <div class="filter_text">
+                        <p>Дизайнерский</p>
+                        <p>от 17000 ₽ / м²</p>
+                    </div>
+                    <p class = "text_5">
+                        Идеально подойдет тем, кто хочет освежить внешний <br>
+                        вид квартиры без внесения серьезных изменений в <br>
+                        инженерные системы и смены планировки.
+                    </p>
+                    <p class = "text_6">Рассчитать стоимость</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="text_after_filters">
+        <p>Почему у конкуретнов дешевле в два раза?</p>
+    </div>
+
+
+
+    <div class="other_apartments" id = "other_apartments">
+        <div class="other_apartments_point1">
+            <p>Клиенты и их квартиры</p>
+            <p>Несколько историй от людей, которые доверили нам своё жильё</p>
+        </div>
+        <div>
+            <img src="style/pictures/spisok_foto.png" class="foto">
+        </div>
+        <div class="other_apartments_point2">
+            <p>Больше отзывов в нашем инстаграме →</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="calculate_cost_product" id = "calculate_cost_product">
+        <p class = "calculate_cost_product_text_1">Рассчитайте стоимость ремонта</p>
+        <div class="calculate_cost_product_block">
+            <div class="calculate_cost_product_content">
+                <div class="calculate_cost_product_text">
+                    <div class="calculate_cost_product_content_point1">
+                        <p class = "calculate_cost_product_text_2">Площадь квартиры</p>
+                        <label class = "calculate_cost_product_points">
+                            <input type="text">
+                            <p>м²</p>
+                        </label>
+                    </div>
+                    <div class="calculate_cost_product_content_point2">
+                        <p class = "calculate_cost_product_text_3">Комнаты</p>
+                        <div class="calculate_cost_product_content_point3">
+                            <p>студия</p>
+                            <p class = "active">1</p>
+                            <p>2</p>
+                            <p>3</p>
+                            <p>4</p>
+                            <p>5</p>
+                        </div>
+                    </div>
+                    <div class="calculate_cost_product_content_point4">
+                        <p class = "calculate_cost_product_text_4">Тип помещения</p>
+                        <div class="calculate_cost_product_content_point5">
+                            <p class = "active">Новостройка</p>
+                            <p>Вторичка</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="calculate_cost_product_buttons">
+            <p>Назад</p>
+            <p>Далее</p>
+            <p>к шагу 2 из 4</p>
+        </div>
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+    
+</body>
+
+
+
+<footer>
+    <div class="footer_main" id = "contact">
+        <p class = "footer_text_1">На связи ежедневно c 8:00 до 20:00</p>
+        <div class="footer_point1">
+            <p>+7 (495) 150-90-82</p>
+            <p>Пригласить сметичика</p>
+        </div>
+        <p class = "footer_text_2">г. Зеленоград, ул. Генерала Алексеева, дом 42, офис 214</p>
+        <p class = "footer_text_3">По любым вопросам <span class = "selections">kotov-remont@yandex.ru</span></p>
+    </div>
+    <div class="icon">
+        <i class='fa fa-instagram'></i>
+        <i class='fa fa-vk'></i>
+        <i class='fa fa-facebook'></i>
+        <i class='fa fa-odnoklassniki'></i>
+    </div>
+    <div class="footer_menu">
+        <p>Главная</p>
+        <p>О нас</p>
+        <p>Наши проекты</p>
+        <p>Цены на ремонт</p>
+        <p>Отзывы клиентов</p>
+        <p>Расчет стоимости</p>
+        <p>Контакты</p>
+    </div>
+    <div class="hr">
+        <hr>
+    </div>
+    <div class="footer_down">
+        <div class="logo">
+            <img src = "style/pictures/белое_лого.png" class="footer_img">
+        </div>
+        <p>Ремонт без задержек и переплат в Москве и МО</p>
+        <p>2013 — 2019 © Котов </p>
+    </div>
+</footer>
+
+
+</html>

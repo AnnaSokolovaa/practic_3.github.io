@@ -1,0 +1,109 @@
+@keyframes fade {
+	from {
+		opacity: 0.1;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.filter{
+    margin-top: 2.5%;
+
+	.filter_container{
+
+		.list{
+			display: flex;
+			flex-direction: row;
+			list-style-type: none;
+            margin-bottom: 5%;
+			
+			& p{
+                margin-right: 3%;
+				cursor: pointer;
+                background-color: #F0EEEE;
+                font-size: 1.2vw;
+                font-weight: 100;
+                padding-top: 1vw;
+                padding-bottom: 1vw;
+                padding-left: 2vw;
+                padding-right: 2vw;
+			}
+
+            & p:last-child{
+                margin-right: 0%;
+            }
+
+            & .active{
+                background-color: #F05A26;
+                color: white;
+            }
+		}
+
+		.filter_blocks{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5%;
+
+            & .blocks__item{
+                animation: fade 1.5s;
+                -webkit-animation: fade 1.5s;
+                
+                & img{
+                    width: 100%;
+                }
+
+                & .filter_text{
+                    display: flex;
+                    flex-direction: row;
+
+                    & p{
+                        font-size: 1.6vw;
+                        font-weight: 100;
+                    }
+
+                    & p:last-child{
+                        margin-left: auto;
+                        margin-right: 0;
+                    }
+                }
+
+                & .text_5{
+                    color: #999999;
+                    font-size: 1.2vw;
+                    font-weight: 100;
+                    margin-top: -1%;
+                }
+
+                & .text_6{
+                    color: #F05A26;  
+                    font-size: 1.2vw;
+                    font-weight: 400;
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    text-decoration-thickness: 1px;
+                }
+            }
+		}
+	}
+}
+
+
+.text_after_filters{
+  background-color: #F0EEEE;
+  color: #F05A26;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-thickness: 1px;
+  font-size: 2.5vw;
+  font-weight: 700;
+  margin-top: 10%;
+  margin-left: -5.5%;
+  margin-right: -5.5%;
+  padding-top: 2.5vw;
+  padding-bottom: 2.5vw;
+
+  & p{
+      margin-left: 5%;
+  }
+}

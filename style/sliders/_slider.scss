@@ -1,0 +1,140 @@
+.sliders{
+    background-color: #F0EEEE;
+    margin-top: 2.5%;
+	margin-left: -5.5%;
+	margin-right: -5.5%;
+
+	& p:first-child{
+		font-size: 2.5vw;
+		font-weight: 700;
+		margin-left: 5%;
+	}
+
+	& p:nth-of-type(2){
+		color: #999999;
+		font-size: 1.2vw;
+		font-weight: 400;
+		margin-left: 5%;
+	}
+
+	& .slider {
+		
+		& .slider__container {
+			display: flex;
+			flex-direction: row;
+			margin-left: 5%;
+			margin-right: 5%;
+		
+			& .slider__image {
+				width: 86%;
+				object-fit: cover;
+			}
+	
+			& .slider__nav {
+				cursor: pointer;
+				background-color: #E5E5E5;
+				border: none;
+				width: 100px;
+			}
+			& .slider__nav-left {
+			}
+			& .slider__nav-right {
+			}
+		}
+	
+		& .slider__controls {
+			padding-top: 1rem;
+			text-align: center;
+		
+			& .slider__dots {
+				padding: 1rem 0;
+				text-align: center;
+		
+				& .slider__dot {
+					cursor: pointer;
+					height: 15px;
+					width: 15px;
+					margin: 0 2px;
+					background-color: #a0a1a9;
+					border-radius: 50%;
+					display: inline-block;
+				}
+				.slider__dot.activ,
+				.slider__dot:hover {
+					background-color: #F05A26;
+				}
+			}
+		}
+	}
+}
+
+
+.slider_block{
+	display: none;
+	margin-top: 1%;
+	margin-bottom: 5%;
+
+	& .slider_elem1{
+		display: flex;
+		flex-direction: row;
+
+		& .text_19{
+			font-size: 1.2vw;
+			font-weight: 400;
+			white-space: nowrap;
+			margin-left: 5%;
+		}
+
+		& .slider_elem2{
+			display: flex;
+			flex-direction: column;
+
+			& .text_20{
+				font-size: 1.2vw;
+				font-weight: 400;
+				margin-left: 4.5%;
+			}
+
+			& .slider_elem3{
+				display: flex;
+				flex-direction: row;
+				margin-left: 4.5%;
+
+				& .slider_elem4{
+					display: flex;
+					flex-direction: column;
+					margin-right: 10%;
+
+					& p:first-child{
+						font-size: 1.2vw;
+						font-weight: 400;
+					}
+
+					& p:last-child{
+						font-size: 1.2vw;
+						font-weight: 900;
+					}
+				}
+			}
+		}
+	}
+}
+
+.slider_block.active{
+	display: block;
+}
+
+
+.fade {
+animation: fade 1.5s;
+-webkit-animation: fade 1.5s;
+}
+
+@keyframes fade {
+from {
+	opacity: 0.1;
+}
+to {
+	opacity: 1;
+}
+}
